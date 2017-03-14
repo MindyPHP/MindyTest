@@ -236,7 +236,7 @@ switch ($command) {
 
         $commands = [
             'git subtree split --prefix={path} -b {temp_name}',
-            'git push {name} refs/tags/{tag}',
+            'git push {name} master:refs/tags/{tag}',
             'git branch -D {temp_name}',
         ];
         $i = 1;
